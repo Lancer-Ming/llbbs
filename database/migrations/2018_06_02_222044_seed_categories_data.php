@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Carbon\Carbon;
 
 class SeedCategoriesData extends Migration
 {
@@ -13,22 +14,32 @@ class SeedCategoriesData extends Migration
      */
     public function up()
     {
+        $now = Carbon::now()->toDateTimeString();
+
         $categories = [
             [
                 'name' => '分享',
                 'description' => '分享创造，分享发现',
+                'created_at' => $now,
+                'updated_at' => $now,
             ],
             [
                 'name' => '教程',
                 'description' => '开发技巧、推荐拓展包等',
+                'created_at' => $now,
+                'updated_at' => $now,
             ],
             [
                 'name' => '问答',
                 'description' => '请保持友善, 互帮互助',
+                'created_at' => $now,
+                'updated_at' => $now,
             ],
             [
                 'name' => '公告',
                 'description' => '站点公告',
+                'created_at' => $now,
+                'updated_at' => $now,
             ]
         ];
 
