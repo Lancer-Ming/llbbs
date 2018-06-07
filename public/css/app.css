@@ -1398,7 +1398,7 @@ th {
 
 html {
   font-size: 10px;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 body {
@@ -7884,7 +7884,7 @@ button.close {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .carousel-control.left {
@@ -7973,7 +7973,7 @@ button.close {
   border-radius: 10px;
   cursor: pointer;
   background-color: #000 \9;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .carousel-indicators .active {
@@ -8397,5 +8397,38 @@ body {
 
 .users-show-page .user-info .thumbnail {
   margin-bottom: 0px;
+}
+
+/* Topic Index Page */
+
+.topics-index-page .topic-list .nav > li > a {
+  position: relative;
+  display: block;
+  padding: 5px 14px;
+  font-size: 0.9em;
+}
+
+.topics-index-page .topic-list a {
+  color: #444444;
+}
+
+.topics-index-page .topic-list .meta {
+  font-size: 0.9em;
+  color: #b3b3b3;
+}
+
+.topics-index-page .topic-list .meta a {
+  color: #b3b3b3;
+}
+
+.topics-index-page .topic-list .badge {
+  background-color: #d8d8d8;
+}
+
+.topics-index-page .topic-list hr {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  border: 0;
+  border-top: 1px solid #dcebf5;
 }
 
