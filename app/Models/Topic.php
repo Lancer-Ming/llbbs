@@ -53,7 +53,4 @@ class Topic extends Model
         return $query->orderBy('created_at', 'desc');
     }
 
-    public function ggle() {
-        return 123;
-    }
 }
