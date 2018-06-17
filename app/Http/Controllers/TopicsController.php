@@ -21,7 +21,7 @@ class TopicsController extends Controller
     public function index(Request $request, Topic $topic)
     {
         $topics = $topic->withOrder($request->order)->paginate(20);
-        return view('topics.index', compact('成功删除！'));
+        return view('topics.index', compact('topics'));
     }
 
     public function show(Topic $topic)
@@ -64,7 +64,7 @@ class TopicsController extends Controller
         $this->authorize('destroy', $topic);
         $topic->delete();
 
-        return redirect()->route('topics.index')->with('message', 'Deleted successfully.');
+        return redirect()->route('topics.index')->with('success', '成功删除！');
     }
 
     public function uploadImage(Request $request, ImageUploadHandler $uploader)
